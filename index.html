@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- 
+HTML file for the canvas drawing app game -->
+
+<html>
+
+<!-- references:
+ https://www.w3schools.com/tags/tag_select.asp -->
+
+
+<head>
+    <title>Drawing App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    </style>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <h1>Drawing App</h1>
+    <canvas id="testCanvas" width="400" height="400"></canvas>
+    <br>
+
+    <label for="shapes">Select a shape:</label>
+    <select id="shapes">
+        <option value="triangle">Triangle</option>
+        <option value="circle">Circle</option>
+        <option value="rectangle">Rectangle</option>
+
+    </select>
+
+    <p></p>
+
+    <label for="color">Select a colour:</label>
+    <input id="color" type="color">
+
+    <p></p>
+
+    <div id="triangleParams">
+        <label for="pt1X">Point 1 X:</label>
+        <input id="pt1X" type="number" value="50">
+
+        <label for="pt1Y">Point 1 Y:</label>
+        <input id="pt1Y" type="number" value="50">
+
+        <label for="pt2X">Point 2 X:</label>
+        <input id="pt2X" type="number" value="100">
+
+        <label for="pt2Y">Point 2 Y:</label>
+        <input id="pt2Y" type="number" value="50">
+
+        <label for="pt3X">Point 3 X:</label>
+        <input id="pt3X" type="number" value="75">
+
+        <label for="pt3Y">Point 3 Y:</label>
+        <input id="pt3Y" type="number" value="100">
+    </div>
+
+    <div id="circleParams">
+        <label for="centerX">Center X:</label>
+        <input id="centerX" type="number" value="100">
+
+        <label for="centerY">Center Y:</label>
+        <input id="centerY" type="number" value="100">
+
+        <label for="radius">Radius:</label>
+        <input id="radius" type="number" value="100">
+    </div>
+
+    <div id="rectParams">
+        <label for="tLeftX">Top Left X:</label>
+        <input id="tLeftX" type="number" value="100">
+
+        <label for="tLeftY">Top Left Y:</label>
+        <input id="tLeftY" type="number" value="100">
+
+        <label for="width">Width:</label>
+        <input id="width" type="number" value="100">
+
+        <label for="height">Height:</label>
+        <input id="height" type="number" value="100">
+    </div>
+    
+    <p></p>
+
+    <input id="draw" type="button" value="Draw!">
+    <input id="undo" type="button" value="Undo">
+    <input id="clear" type="button" value="Clear">
+
+</body>
+
+</html>

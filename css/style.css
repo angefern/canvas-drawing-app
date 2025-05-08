@@ -1,0 +1,24 @@
+/* 
+CSS file for the canvas drawing app game */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#testCanvas {
+    background-color: rgb(255, 255, 255);
+    margin: 30px;
+}
+
+body {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(249, 219, 240);
+}
+
+#circleParams, #rectParams { 
+    display: none;
+}
+
+input[type="number"] { 
+    width: 8%;
+}
